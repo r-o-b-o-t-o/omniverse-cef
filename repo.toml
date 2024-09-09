@@ -8,7 +8,7 @@
 import_configs = ["${root}/_repo/deps/repo_kit_tools/kit-template/repo.toml"]
 
 # Repository Name
-name = "kit-extension-template-cpp"
+name = "omniverse-cef"
 
 [repo_build]
 msbuild.vs_version = "vs2019"
@@ -17,8 +17,8 @@ licensing.enabled = false
 fetch.pip.licensing_enabled = false
 
 [repo_docs]
-name = "Kit Extension Template C++"
-project = "kit-extension-template-cpp"
+name = "Omniverse CEF"
+project = "omniverse-cef"
 api_output_directory = "api"
 use_fast_doxygen_conversion=false
 sphinx_version = "4.5.0.2-py3.10-${platform}"
@@ -33,18 +33,8 @@ sphinx_exclude_patterns = [
 
 [repo_docs.kit]
 extensions = [
-    "omni.example.cpp.actions",
-    "omni.example.cpp.commands",
-    "omni.example.cpp.hello_world",
-    "omni.example.cpp.omnigraph_node",
-    "omni.example.cpp.pybind",
-    "omni.example.cpp.ui_widget",
-    "omni.example.cpp.usd",
-    "omni.example.cpp.usd_physics",
-    "omni.example.cpp.usdrt",
-    "omni.example.python.hello_world",
-    "omni.example.python.ui",
-    "omni.example.python.usdrt",
+    "r_o_b_o_t_o.cef",
+    "cef_startup",
 ]
 
 [repo_package.packages."platform:windows-x86_64".docs]
